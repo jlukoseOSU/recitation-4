@@ -32,6 +32,18 @@ struct list {
   struct link* head;
 };
 
+struct link* get_head(struct list* list) {
+  return list->head;
+}
+
+struct link* get_next(struct link* link) {
+  return link->next;
+}
+
+int get_val(struct link* link) {
+  return link->val;
+}
+
 
 /*
  * This function allocates, initializes, and fills a small linked list and

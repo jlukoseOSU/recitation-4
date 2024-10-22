@@ -11,4 +11,10 @@ struct list;
 
 struct list* list_setup();
 
+struct link* get_head(struct list* list);
+
+struct link* get_next(struct link* link);
+
+int get_val(struct link* link);
+
 #endif
